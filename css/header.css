@@ -39,7 +39,6 @@
     
 }
 #header .min {
-    
     z-index: 1;
     width: 10px;
     height: 10px;
@@ -51,6 +50,7 @@
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     /* prevents bg color from leaking outside the border */
+    background-image: url(../images/min.png);
     background-color: #595b5d;
     /* layer fill content */
     float: left;
@@ -61,6 +61,7 @@
     transition: background-image 0.5s;
 }
 #header .min:hover {
+    background-image: url(../images/mincolor.png);
     background-color: #2ead52;
 }
 #header .close {
@@ -75,6 +76,7 @@
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     /* prevents bg color from leaking outside the border */
+    background-image: url(../images/quit.png);
     background-color: #595b5d;
     /* layer fill content */
     float: left;
@@ -85,6 +87,7 @@
     transition: background-image 0.5s;
 }
 #header .close:hover {
+    background-image: url(../images/quitcolor.png);
     background-color: #e64f32;
 }
 #header .max {
@@ -99,6 +102,7 @@
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     /* prevents bg color from leaking outside the border */
+    background-image: url(../images/max.png);
     background-color: #595b5d;
     /* layer fill content */
     float: left;
@@ -109,6 +113,7 @@
     transition: background-image 0.5s;
 }
 #header .max:hover {
+    background-image: url(../images/maxcolor.png);
     background-color: #f3c400;
 }
 #header .max-max {
