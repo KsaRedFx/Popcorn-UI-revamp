@@ -257,6 +257,9 @@
 #settings .dropdown.sub-size p {
     margin-left: 31px;
 }
+#settings .dropdown.ui-theme select {
+    width: 100px;
+}
 #settings .dropdown.sub-color p {
     margin-left: 31px;
 }
@@ -265,6 +268,13 @@
 }
 #settings .seperater.subtitles {
     margin-top: 60px;
+}
+
+#settings .seperater.ui {
+    margin-top: 256px;
+}
+#settings .seperater.ui1 {
+    margin-top: 296px;
 }
 #settings .seperater.cache {
     margin-top: 10px;
