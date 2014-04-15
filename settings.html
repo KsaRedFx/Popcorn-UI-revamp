@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/item.css" rel="stylesheet" type="text/css">
+    <link href="css/detailed-info.css" rel="stylesheet" type="text/css">
+    <link href="css/frame.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/settings.css" rel="stylesheet" type="text/css">
+
+    <title>Popcorn Time - Dev UI</title>
+</head>
+
+<body>
+    <div class="background">
+        <div id="header">
+
+
+            <div class="close"></div>
+
+            <div class="max"></div>
+
+            <div class="min"></div>
+            <div class="max-max"></div>
+
+            <div class="title">
+                Popcorn&nbsp;Time
+            </div>
+
+            <div class="movies">
+                Movies
+            </div>
+
+
+            <div class="tv-series">
+                TV&nbsp;Series
+            </div>
+
+
+
+
+
+
+
+            <div class="settings"></div>
+            <div class="queue"></div>
+            <div class="favorites"></div>
+
+            <form class="SearchField">
+                <input type="search" placeholder="Search">
+            </form>
+
+        </div>
+
+
+        <div id="settings">
+
+            <div class="tabs">
+
+
+
+                <div class="title">Settings</div>
+
+                <div class="download-options">Download Options</div>
+
+                <div class="subtitles-options">Subtitles</div>
+                <div class="UI-options">User Interface</div>
+                <div class="more-options">More Options</div>
+
+
+            </div>
+
+            <div class="settings-content">
+
+                <div class="download-location-text">Download Location:</div>
+                <textarea name="download-location" class="download-location">C:\Users\UserX\Downloads</textarea>
+                <div class="download-btn">Browse</div>
+
+
+
+
+                <div class="check-settings">
+                    <input type="checkbox" value="None" id="check-settings" name="check" />
+                    <label for="check-settings"></label>
+                </div>
+                <div class="checkbox-label">Auto-Erase Cache</div>
+
+                <div class="cache seperater"></div>
+                <div class="dropdown download-limit">
+                    <p>Download Limit:</p>
+
+                    <select>
+                        <option>Unlimited</option>
+                        <option>100 mb/s</option>
+                        <option>200 mb/s</option>
+
+                    </select>
+                    <div class="dropdown-arrow"></div>
+                </div>
+
+                <div class="dropdown upload-limit">
+                    <p>Upload Limit:</p>
+
+                    <select>
+                        <option>Unlimited</option>
+                        <option>100 mb/s</option>
+                        <option>200 mb/s</option>
+
+                    </select>
+                    <div class="dropdown-arrow"></div>
+                </div>
+                <div class="dropdown local-port">
+                    <p>Local Port:</p>
+                    <textarea name="port-text" maxlength="4" class="port-text">9999</textarea>
+
+                </div>
+
+                <div class="subtitles seperater"></div>
+                <div class="dropdown lang">
+                    <p>Default Language:</p>
+
+                    <select>
+                        <option>English</option>
+                        <option>French</option>
+                        <option>Spanish</option>
+
+                    </select>
+                    <div class="dropdown-arrow"></div>
+                </div>
+                <div class="seperater font"></div>
+                <div class="dropdown">
+                    <p>Font:</p>
+
+                    <select>
+                        <option>Ariel</option>
+                        <option>French</option>
+                        <option>Spanish</option>
+
+                    </select>
+                    <div class="dropdown-arrow"></div>
+                </div>
+                <div class="dropdown sub-style">
+                    <p>Style:</p>
+
+                    <select>
+                        <option>Bold</option>
+                        <option>Thin</option>
+                        <option>Regular</option>
+
+                    </select>
+                    <div class="dropdown-arrow"></div>
+                </div>
+                <div class="dropdown sub-size">
+                    <p>Size:</p>
+
+                    <select>
+                        <option>16 px</option>
+                        <option>17 px</option>
+                        <option>20 px</option>
+
+                    </select>
+                    <div class="dropdown-arrow"></div>
+                </div>
+                <div class="dropdown sub-color">
+                    <p>Color:</p>
+
+                    <select>
+                        <option>White</option>
+                        <option>Black</option>
+                        <option>Orange</option>
+
+                    </select>
+                    <div class="dropdown-arrow"></div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+</body>
+
+<script src="js/jquery-2.1.0.min.js"></script>
+
+<script>
+    function hideElm(name) {
+        $('#' + name).fadeOut('slow');
+
+    }
+
+
+    function showElm(name) {
+        $('#' + name).fadeIn('slow');
+
+    }
+</script>
+
+</html>
