@@ -392,7 +392,7 @@ fonts to show/hide properly.
 /* Switch to the exit icon when the player is in fullscreen */
 
 .vjs-default-skin.vjs-fullscreen .vjs-fullscreen-control:before {
-    content: "\e00b";
+    content: url('images/Normalscreen.png');
 }
 /* Big Play Button (play button at start)
 --------------------------------------------------------------------------------
