@@ -165,9 +165,17 @@
     background-color: #2d75df;
     /* layer fill content */
     float: left;
-    top: 71px;
+    top: 28px;
     position: absolute;
 }
+#header .selected.tv {
+    right:-9px;
+}
+#header .selected.movies {
+    right:-13px;
+        width: 71px;
+}
+
 #header .genre-sort {
     width: 0;
     height: 0;
