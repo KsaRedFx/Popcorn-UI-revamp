@@ -17,27 +17,31 @@
 		<script>
 			videojs.options.flash.swf = "video-js/video-js.swf";
 		</script>
-		
+
 		<style>
+			body{
+				margin:0;
+			}
 			.details-player{
 				right: 10px;
 				position: absolute;
-				top: 10px;
+				top: 20px;
 				z-index: 4;
 			}
 			.close-info-player{
-				background: url(https://raw.githubusercontent.com/sammuel86/Popcorn-UI-revamp/master/images/Close.png);
-				width: 17px;
-				height: 17px;
+				background: url(https://raw.githubusercontent.com/sammuel86/Popcorn-UI-revamp/master/video-js/images/Close.png);
+				width: 16px;
+				height: 16px;
 				position: absolute;
-				right: 20px;
+				right: 30px;
+				top:1px;
 			}
 			.eye-info-player{
-				background: url(https://raw.githubusercontent.com/sammuel86/Popcorn-UI-revamp/master/images/ViewMoreInfo.png);
+			background: url(https://raw.githubusercontent.com/sammuel86/Popcorn-UI-revamp/master/video-js/images/ViewMoreInfo.png);
 				width: 23px;
-				height: 19px;
+				height: 17px;
 				position: absolute;
-				right: 60px;
+				right: 70px;
 			}
 			.eye-info-player:hover{
 				cursor: pointer;
@@ -53,9 +57,9 @@
 				padding: 10px;
 				font-family: sans-serif;
 				font-size: 14px;
-				top: 30px;
+				top: 32px;
 				position: absolute;
-				right: 50px;
+				right: 60px;
 				border-radius: 2px;
 			}
 			.details-info-player > span{
@@ -66,11 +70,11 @@
 			.arrow-up {
 				width: 0;
 				height: 0;
-				border-left: 10px solid rgba(0, 0, 0, 0);
-				border-right: 10px solid rgba(0, 0, 0, 0);
-				border-bottom: 10px solid rgba(31, 31, 31, 0.74);
-				top: -10px;
-				right: 12px;
+				border-left: 6px solid rgba(0, 0, 0, 0);
+				border-right: 6px solid rgba(0, 0, 0, 0);
+				border-bottom: 6px solid rgba(31, 31, 31, 0.74);
+				top: -6px;
+				right: 15px;
 				position: absolute;
 			}
 
