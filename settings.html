@@ -1,27 +1,19 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <title>Popcorn Time - Dev UI</title>
     <link href="css/item.css" rel="stylesheet" type="text/css">
     <link href="css/detailed-info.css" rel="stylesheet" type="text/css">
     <link href="css/frame.css" rel="stylesheet" type="text/css">
     <link href="css/header.css" rel="stylesheet" type="text/css">
     <link href="css/settings.css" rel="stylesheet" type="text/css">
-
-    <title>Popcorn Time - Dev UI</title>
 </head>
-
 <body>
     <div class="background">
         <div id="header">
-
-
             <div class="close"></div>
-
             <div class="max"></div>
-
             <div class="min"></div>
             <div class="max-max"></div>
 
@@ -32,17 +24,9 @@
             <div class="movies">
                 Movies
             </div>
-
-
             <div class="tv-series">
                 TV&nbsp;Series
             </div>
-
-
-
-
-
-
 
             <div class="settings page"></div>
             <div class="queue"></div>
@@ -51,160 +35,156 @@
             <form class="SearchField">
                 <input type="search" placeholder="Search">
             </form>
-
         </div>
-
-
         <div id="settings">
+            <div class="title main">Settings</div>
 
-            <div class="tabs">
-
-
-
-                <div class="title">Settings</div>
-
-                <div class="download-options">Download Options</div>
-
-                <div class="subtitles-options">Subtitles</div>
-                <div class="UI-options">User Interface</div>
-                <div class="more-options">More Options</div>
-
-
+            <div class="items">
+                <div class="sub">
+                    <div class="title"> Download Options </div>
+                    <div class="content"> 
+                        <div class="menutext">Download Location:</div>
+                        <div class="download">
+                            <textarea name="download-location" class="download location">C:\Users\UserX\Downloads</textarea>
+                            <div class="download btn">Browse</div>
+                        </div>
+                        <br style="clear:both" />
+                        <div class="menutext">Cache Settings:</div>
+                        <div class="checkbox">
+                            <div class="check-settings">
+                                <input type="checkbox" value="None" id="check-settings" name="check" />
+                                <label for="check-settings"></label>
+                            </div>
+                            <div class="checkbox-label">Auto-Erase Cache</div>
+                        </div>
+                        <br style="clear:both" />
+                        <div class="menutext">Retrieval Settings:</div>
+                        <div class="retrieval underdog">
+                            <div class="dropdown text"> Download Limit: </div>
+                            <div class="dropdown object"> 
+                                <select>
+                                    <option>Unlimited</option>
+                                    <option>100 mb/s</option>
+                                    <option>200 mb/s</option>
+                                </select>
+                                <div class="dropdown-arrow"></div>
+                            </div>
+                            <br style="clear:both" />
+                            <div class="dropdown text">Upload Limit:</div>
+                            <div class="dropdown object">
+                                <select>
+                                    <option>Unlimited</option>
+                                    <option>100 mb/s</option>
+                                    <option>200 mb/s</option>
+                                </select>
+                                <div class="dropdown-arrow"></div>
+                            </div>
+                            <br style="clear:both" />
+                            <div class="dropdown text">Local Port:</div>
+                            <div class="dropdown object">
+                                <textarea name="port-text" maxlength="4" class="port-text">9999</textarea>
+                            </div>
+                            <br class="clear:both" />
+                        </div>
+                        <br class="clear:both" />
+                    </div>
+                    <br style="clear:both" />
+                </div>
+                <div class="bottom"> 
+                    <div class="xtitle"></div>
+                    <div class="xcontent"></div>
+                </div>
+                <div class="sub">
+                    <div class="title"> Subtitles </div>
+                    <div class="content">
+                        <div class="menutext">Language Settings:</div>
+                        <div class="subtitles underdog">
+                            <div class="dropdown text">Default Language:</div>
+                            <div class="dropdown object">
+                                <select>
+                                    <option>English</option>
+                                    <option>French</option>
+                                    <option>Spanish</option>
+                                </select>
+                                <div class="dropdown-arrow"></div>
+                            </div>
+                            <br style="clear:both" />
+                            <div class="dropdown text">Font:</div>
+                            <div class="dropdown object">
+                                <select>
+                                    <option>Ariel</option>
+                                    <option>French</option>
+                                    <option>Spanish</option>
+                                </select>
+                                <div class="dropdown-arrow"></div>
+                            </div>
+                            <br style="clear:both" />
+                            <div class="dropdown text">Style:</div>
+                            <div class="dropdown object">
+                                <select>
+                                    <option>Bold</option>
+                                    <option>Thin</option>
+                                    <option>Regular</option>
+                                </select>
+                                <div class="dropdown-arrow"></div>
+                            </div>
+                            <br style="clear:both" />
+                            <div class="dropdown text">Size:</div>
+                            <div class="dropdown object">
+                                <select>
+                                    <option>16 px</option>
+                                    <option>17 px</option>
+                                    <option>20 px</option>
+                                </select>
+                                <div class="dropdown-arrow"></div>
+                            </div>
+                            <br style="clear:both" />
+                            <div class="dropdown text">Color:</div>
+                            <div class="dropdown object">
+                                <select>
+                                    <option>White</option>
+                                    <option>Black</option>
+                                    <option>Orange</option>
+                                </select>
+                                <div class="dropdown-arrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom"> 
+                    <div class="xtitle"></div>
+                    <div class="xcontent"></div>
+                </div>
+                <div class="sub">
+                    <div class="title">App Settings</div>
+                    <div class="content">
+                        <div class="menutext">Default Language:</div>
+                        <div class="language underdog">
+                            <div class="dropdown text">App Language:</div>
+                            <div class="dropdown object">
+                                <select>
+                                    <option>English</option>
+                                    <option>French</option>
+                                    <option>Spanish</option>
+                                </select>
+                                <div class="dropdown-arrow"></div>
+                            </div>
+                            <br style="clear:both" />>
+                            <div class="dropdown text">Color Theme:</div>
+                            <div class="dropdown object">
+                                <select>
+                                    <option>Black/Blue</option>
+                                    <option>French</option>
+                                    <option>Spanish</option>
+                                </select>
+                                <div class="dropdown-arrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="settings-content">
-
-                <div class="download-location-text">Download Location:</div>
-                <textarea name="download-location" class="download-location">C:\Users\UserX\Downloads</textarea>
-                <div class="download-btn">Browse</div>
-
-
-
-
-                <div class="check-settings">
-                    <input type="checkbox" value="None" id="check-settings" name="check" />
-                    <label for="check-settings"></label>
-                </div>
-                <div class="checkbox-label">Auto-Erase Cache</div>
-
-                <div class="cache seperater"></div>
-                <div class="dropdown download-limit">
-                    <p>Download Limit:</p>
-
-                    <select>
-                        <option>Unlimited</option>
-                        <option>100 mb/s</option>
-                        <option>200 mb/s</option>
-
-                    </select>
-                    <div class="dropdown-arrow"></div>
-                </div>
-
-                <div class="dropdown upload-limit">
-                    <p>Upload Limit:</p>
-
-                    <select>
-                        <option>Unlimited</option>
-                        <option>100 mb/s</option>
-                        <option>200 mb/s</option>
-
-                    </select>
-                    <div class="dropdown-arrow"></div>
-                </div>
-                <div class="dropdown local-port">
-                    <p>Local Port:</p>
-                    <textarea name="port-text" maxlength="4" class="port-text">9999</textarea>
-
-                </div>
-
-                <div class="subtitles seperater"></div>
-                <div class="dropdown lang">
-                    <p>Default Language:</p>
-
-                    <select>
-                        <option>English</option>
-                        <option>French</option>
-                        <option>Spanish</option>
-
-                    </select>
-                    <div class="dropdown-arrow"></div>
-                </div>
-                <div class="seperater font"></div>
-                <div class="dropdown">
-                    <p>Font:</p>
-
-                    <select>
-                        <option>Ariel</option>
-                        <option>French</option>
-                        <option>Spanish</option>
-
-                    </select>
-                    <div class="dropdown-arrow"></div>
-                </div>
-                <div class="dropdown sub-style">
-                    <p>Style:</p>
-
-                    <select>
-                        <option>Bold</option>
-                        <option>Thin</option>
-                        <option>Regular</option>
-
-                    </select>
-                    <div class="dropdown-arrow"></div>
-                </div>
-                <div class="dropdown sub-size">
-                    <p>Size:</p>
-
-                    <select>
-                        <option>16 px</option>
-                        <option>17 px</option>
-                        <option>20 px</option>
-
-                    </select>
-                    <div class="dropdown-arrow"></div>
-                </div>
-                <div class="dropdown sub-color">
-                    <p>Color:</p>
-
-                    <select>
-                        <option>White</option>
-                        <option>Black</option>
-                        <option>Orange</option>
-
-                    </select>
-                    <div class="dropdown-arrow"></div>
-                </div>
-
-                <div class="seperater ui"></div>
-                <div class="dropdown">
-                    <p>App Language:</p>
-
-                    <select>
-                        <option>English</option>
-                        <option>French</option>
-                        <option>Spanish</option>
-
-                    </select>
-                    <div class="dropdown-arrow"></div>
-                </div>
-                <div class="seperater ui1"></div>
-                <div class="dropdown ui-theme">
-                    <p>Color Theme:</p>
-
-                    <select>
-                        <option>Black/Blue</option>
-                        <option>French</option>
-                        <option>Spanish</option>
-
-                    </select>
-                    <div class="dropdown-arrow"></div>
-                </div>
-
-            </div>
-
-
-
         </div>
+    </div>
 </body>
 
 <script src="js/jquery-2.1.0.min.js"></script>
