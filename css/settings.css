@@ -19,12 +19,6 @@
 #settings .title.main {
     width: 250px;
 }
-#settings .items {
-
-}
-#settings .sub {
-
-}
 #settings .underdog {
     margin-left: 15px;
 }
@@ -38,7 +32,7 @@
 #settings .items .content {
     float: left;
     padding-left: 32px;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 25px;
     border-left: solid #3a3b3e 1px;
     width: calc(100% - 250px);
@@ -221,10 +215,9 @@
     float: left;
     cursor: pointer;
 }
-#settings .port-text {
+#settings .textarea {
     margin-left: 5px;
     padding-left: 10px;
-    width: 78px;
     height: 25px;
     border: 0px solid #393b3d;
     background-color: #393b3d;
@@ -234,6 +227,9 @@
     line-height: 25px;
     cursor: text;
     outline: 0;
+}
+#settings .textarea.port {
+    width: 78px;
 }
 #settings .dropdown.ui-theme select {
     width: 100px;
